@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/rv_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tbl_info"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        app:tabBackground="@color/colorWhite"
+        app:tabGravity="fill"
+        app:tabPaddingStart="-1dp"
+        app:tabPaddingEnd="-1dp"
+        app:tabIndicatorColor="@color/colorPrimary"
+        app:tabMode="fixed" />
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vip_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v4.view.ViewPager>
+    </LinearLayout>
+    <!--me.relex.circleindicator.CircleIndicator
+        android:id="@+id/circle_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="15dp"
+        android:layout_above="@+id/lin_btns"
+        app:ci_drawable_unselected="@drawable/circle_round_corner_unselected"
+        app:ci_drawable="@drawable/circle_round_corner" />-->
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/color_line" />
+
+    <LinearLayout
+        android:id="@+id/lin_btns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/light_blue">
+
+
+        <Button
+            android:id="@+id/btn_sign_in"
+            android:onClick="SignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:background="@color/light_blue"
+            android:text="SIGN IN"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimary" />
+
+        <Button
+            android:id="@+id/btn_sign_up"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:background="@color/light_blue"
+            android:gravity="center"
+            android:text="SIGN UP"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimary" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

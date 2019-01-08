@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".RegisterationActivity">
+
+    <ImageView
+        android:id="@+id/imv_reg_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:background="@drawable/top_banner" />
+
+    <TextView
+        android:id="@+id/txt_reg_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imv_reg_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Welcome"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/txt_reg_lbl1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_reg_lbl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Create Account"
+        android:textSize="14sp" />
+
+    <EditText
+        android:singleLine="true"
+        android:id="@+id/edt_reg_full_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/txt_reg_lbl1"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/light_blue_bg"
+        android:gravity="left|center_vertical"
+        android:hint="FullName"
+        android:paddingLeft="8dp"
+        android:textSize="20dp" />
+
+    <EditText
+        android:singleLine="true"
+        android:id="@+id/edt_reg_phonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/edt_reg_full_name"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/light_blue_bg"
+        android:gravity="left|center_vertical"
+        android:hint="Email/Phone"
+        android:paddingLeft="8dp"
+        android:textSize="20dp" />
+
+    <EditText
+        android:singleLine="true"
+        android:inputType="textPassword"
+        android:id="@+id/edt_reg_password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/edt_reg_phonenumber"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/light_blue_bg"
+        android:gravity="left|center_vertical"
+        android:hint="password"
+        android:paddingLeft="8dp"
+        android:textSize="20dp" />
+
+    <EditText
+        android:singleLine="true"
+        android:inputType="textPassword"
+        android:id="@+id/edt_reg_repass"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/edt_reg_password"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/light_blue_bg"
+        android:gravity="left|center_vertical"
+        android:hint="Repeat password"
+        android:paddingLeft="8dp"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btn_reg"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/edt_reg_repass"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:text="SignUp"
+        android:textAllCaps="true"
+        android:textColor="@color/colorBlack"
+        android:textSize="20dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/btn_reg"
+        android:layout_marginTop="5dp">
+
+        <CheckBox
+            android:id="@+id/cb_reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="32dp" />
+        <TextView
+            android:id="@+id/lbl_reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="3dp"
+            android:layout_toEndOf="@+id/cb_reg"
+            android:text="I agree on ompeg"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/txt_reg_lbl3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/lbl_reg"
+            android:text="terms and conditions"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_reg"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/lin_btns_registration"
+        android:background="@drawable/color_line" />
+
+    <LinearLayout
+        android:id="@+id/lin_btns_registration"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txt_reg_lbl2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:text="already have an account"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/txt_signin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/txt_reg_lbl2"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/txt_reg_lbl2"
+            android:text="SignIn"
+            android:onClick="SignIn"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+</RelativeLayout>
